@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const jees = 'javascript';
+        const js = jees.split('')
+        console.log(js);
+
+        const webTech = [
+            'HTML',
+            'CSS',
+            'JS',
+            'C++'
+        ]; // list semua array
+
+        console.log(webTech); // menampilkan semua array
+        console.log(webTech[0]); // menampilkan array pertama
+        console.log(webTech[3]); // menampilkan array terakhir
+        console.log(webTech.length); // menampilkan panjang array
+
+        // mengetahui index terakhir bisa dihitung dengan cara seperti ini
+        let lastIndex = webTech.length - 1;
+        console.log(webTech[lastIndex]);
+
+        const everyExampe = ['20', '30', '40', '50'];  // .every() akan mengecek apakah array
+        const apakahMemenuhi = everyExampe.every((value) => value > 20); // akan lebih dari value atau tidak  
+        console.log(apakahMemenuhi); // jika lebih, maka akan mengeluarkan true, jika tidak maka akan false
+        </script>
+</body>
+</html>

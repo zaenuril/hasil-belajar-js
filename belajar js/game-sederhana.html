@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game sederhana</title>
+</head>
+<body>
+    
+
+    <script>
+
+                var kesempatan = 3;
+                var tanya = true;
+                
+                while (tanya) {
+                    
+                // menentukan pilihan player
+
+                var player = parseInt(prompt(` Tebak angka\n silahkan pilih angka random 1-10\n anda punya ${kesempatan} kesempatan`));
+                var comp = Math.floor(Math.random() * 10) + 1;
+                var hasil = '';
+                
+                // pilihan komputer
+
+                for (; kesempatan > 0; kesempatan--) {
+
+                if (comp < player) {
+                    hasil = `tebakan kamu terlalu tinggi, kesempatan kamu tinggal ${kesempatan - 1}`;
+                } else if(comp > player){
+                    hasil = `tebakan kamu terlalu rendah, kesempatan kamu tinggal ${kesempatan - 1}`;
+
+                } else if (comp == player) {
+                    hasil = 'tebakan kamu benar';
+                } else{
+                    alert('silahkan masukan angka');
+                }
+                alert(`kamu memilih ${player} dan komputer memilih ${comp} maka ${hasil}`)
+
+                if(kesempatan - 1 == 0  ){
+                        hasil = `kesempatan kamu ${kesempatan - 1};`
+                    } 
+            }
+                
+
+                tanya = confirm('mau main lagi?');
+                
+            }
+            
+        
+        tanya = confirm('makasih sudah bermain ya ^^');
+        
+        </script>
+</body>
+</html>

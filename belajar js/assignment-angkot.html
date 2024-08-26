@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment angkot</title>
+</head>
+<body>
+
+
+    <script>
+
+        var noAngkot = 1;
+        var jmlAngkot = 10;
+        var angkotBeroperasi = 6;
+
+        for (let noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+           if (noAngkot <= 6 && noAngkot !== 5) {
+            console.log(`Angkot no ${noAngkot} sedang beroperasi`);
+            } else if(noAngkot === 8 || noAngkot === 10 || noAngkot === 5){
+                console.log(`Angkot no ${noAngkot} sedang lembur`);
+            } else{
+                console.log(`Angkot no ${noAngkot} tidak sedang beroperasi`);
+            }
+        } 
+
+    </script>
+    
+</body>
+</html>

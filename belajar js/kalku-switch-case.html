@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    let angka1 = Number(prompt("masukan angka 1:"));
+    let operator = prompt("masukan operator: ");
+    let angka2  = Number(prompt("masukan angka 2: "));
+    let hasil;
+
+    switch(operator){
+        case '+':
+            hasil = angka1 + angka2;
+            break;
+        case '-':
+            hasil = angka1 - angka2;
+            break;
+        case '/':
+            hasil = angka1 / angka2;
+            break;
+        case '*':
+            hasil = angka1 * angka2;
+            break;
+        default:
+            hasil = "<p> operator salah B-Baka >///< </p>";
+    }
+
+    document.writeln(`hasil ${angka1} ${operator} ${angka2} = ${hasil}`);
+</script>
+</body>
+</html>

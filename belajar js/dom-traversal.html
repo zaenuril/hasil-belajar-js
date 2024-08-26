@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="previousElementSibling">
+        <h3>Menggunakan Method previousElementSibling</h3>
+        <input type="color">
+        <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
+    </div>
+
+    <script>
+        const preEleSibling = document.getElementById("previouselementsibling");
+        const rounded = preEleSibling.getElementsByTagName("input")[0];
+        rounded.addEventListener("input", function(e) {
+        // tambahkan border radius pada elemen sebelum input dengan
+        // nilai yang di input user pada rounded
+        e.target.previousElementSibling.style.borderRadius = e.target.value + "%";
+});
+    </script>
+</body>
+</html>

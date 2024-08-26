@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar object</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+        // membuat object
+        
+        // cara 1 function declaration
+        
+        function halo(){
+            console.log('Halo sayang');
+        }
+        halo();
+        // THIS mengembalikan object global 
+        
+        // cara 2 object literal
+        let obj = {};
+        obj.halo = function(){
+            Console.log(this);
+            console.log('Halo beb');
+        }
+        obj.halo();
+        // THIS mengembalikan object yang bersangkutan 
+
+        
+        // cara 3 constructor
+        function Halo(){
+            console.log('Halo cantik');
+        }
+        new Halo();
+        // THIS mengembalikan object yang baru dibuat    */
+
+        // const mobil = {
+        //     name: 'tesla',
+        //     owner: 'nong',
+        //     istri: 'rimuru'
+        // }
+
+        // console.log(Object.keys(mobil)); // mengembalikan array yang berisi argumennya
+
+        // const mobil = {
+        //     name: 'tesla',
+        //     owner: 'nong',
+        //     istri: 'rimuru'
+        // }
+
+        // console.log(Object.values(mobil)); // mengembalikan value-nya
+
+        // const mobil = {
+        //     name: 'tesla',
+        //     owner: 'nong',
+        //     istri: 'rimuru'
+        // }
+
+        // console.log(Object.entries(mobil)); // bisa dibilang dipasangkan array dan nilai lah antara keys dan values
+
+        const aku = {
+            nama1: 'nong'
+        }
+
+        const kamu = {
+            nama2: 'rimuru'
+        }
+        console.log(Object.assign(aku, kamu)); // menggabungkan object satu dengan lainnya, nama property harus beda
+
+
+        </script>
+</body>
+</html>

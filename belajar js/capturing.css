@@ -1,0 +1,27 @@
+.cap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px auto;
+  background: linear-gradient(to right, yellow, green);
+  height: 250px;
+  width: 250px;
+}
+
+.cap1 {
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
+
+.cap2 {
+  background-color: red;
+  cursor: pointer;
+}
+
+.cap3 {
+  background-color: sandybrown;
+  cursor: pointer;
+}

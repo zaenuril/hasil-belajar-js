@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sngkot else if</title>
+</head>
+<body>
+    
+
+    <script>
+        var noAngkot = 1;
+        var jmlAngkot = 10;
+        var angkotBeroperasi = 6;
+        
+        for (let noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+            if (noAngkot <= angkotBeroperasi) {
+                console.log('Angkot no ' + noAngkot + ' beroperasi dengan baik');
+            } else if(noAngkot === 8 || noAngkot === 10){
+                console.log('angkot ke ' + noAngkot + ' sedang lembur');
+            }
+            else{
+                console.log('Angkot no ' + noAngkot + ' tidak beroperasi dengan baik');
+            }
+        }
+    </script>
+</body>
+</html>
